@@ -21,16 +21,20 @@ describe('haraka-plugin-queue-kafka', function () {
   })
 })
 
-describe('load_haraka-plugin-queue-kafka_ini', function () {
-  it('loads haraka-plugin-queue-kafka.ini from config/haraka-plugin-queue-kafka.ini', function (done) {
-    this.plugin.load_haraka-plugin-queue-kafka_ini()
-    assert.ok(this.plugin.cfg)
-    done()
-  })
-
-  it('initializes enabled boolean', function (done) {
-    this.plugin.load_haraka-plugin-queue-kafka_ini()
-    assert.equal(this.plugin.cfg.main.enabled, true, this.plugin.cfg)
+describe('load_kafka_config', function () {
+  it('loads config/kafka.ini config into kafkajs.KafkaConfig object', function (done) {
+    this.plugin.load_kafka_config()
+    assert.ok(this.plugin.kCfg)
+    const kCfg = this.plugin.kCfg
+    assert.strictEqual(kCfg.clientId, 'haraka')
+    assert.strictEqual(kCfg.brokers.length, 1)
+    assert.strictEqual(kCfg.brokers[0], '')
+    assert.strictEqual(kCfg.connectionTimeout, 30000)
+    assert.strictEqual(this.plugin.produceTimeout, 30000)
+    assert.strictEqual(this.plugin.topic, '')
+    assert.strictEqual(kCfg.logLevel, 4)
+    assert.ok(!kCfg.sasl)
+    assert.ok(!kCfg.ssl)
     done()
   })
 })

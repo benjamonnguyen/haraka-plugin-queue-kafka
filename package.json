@@ -1,7 +1,7 @@
 {
-  "name": "haraka-plugin-haraka-plugin-queue-kafka",
+  "name": "haraka-plugin-queue-kafka",
   "version": "1.0.3",
-  "description": "Haraka plugin that frobnicates email connections",
+  "description": "Queue inbound mail to a Kafka topic",
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint *.js test/*.js",
@@ -11,23 +11,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haraka/haraka-plugin-haraka-plugin-queue-kafka.git"
+    "url": "git+https://github.com/benjamonnguyen/haraka-plugin-queue-kafka.git"
   },
   "keywords": [
     "haraka",
     "plugin",
-    "haraka-plugin-queue-kafka"
+    "haraka-plugin-queue-kafka",
+    "kafka"
   ],
-  "author": "Welcome Member <happy-haraka-hacker@example.com>",
+  "author": "Benji Nguyen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/haraka/haraka-plugin-haraka-plugin-queue-kafka/issues"
+    "url": "https://github.com/benjamonnguyen/haraka-plugin-queue-kafka/issues"
   },
-  "homepage": "https://github.com/haraka/haraka-plugin-haraka-plugin-queue-kafka#readme",
+  "homepage": "https://github.com/benjamonnguyen/haraka-plugin-queue-kafka#readme",
   "devDependencies": {
     "eslint": "8",
     "eslint-plugin-haraka": "*",
     "haraka-test-fixtures": "*",
     "mocha": "9"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
   }
 }
