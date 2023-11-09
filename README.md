@@ -3,12 +3,8 @@
 [![NPM][npm-img]][npm-url]
 
 # haraka-plugin-queue-kafka
-========
 
 Queue inbound mail to a Kafka topic.
-
-Configuration
--------------
 
 * `config/kafka.ini`
     This config file provides brokers, topic, and SASL authentication options.
