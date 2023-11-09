@@ -26,9 +26,9 @@ $EDITOR kafka.ini
 ```
 
 <!-- leave these buried at the bottom of the document -->
-[ci-img]: https://github.com/haraka/haraka-plugin-haraka-plugin-queue-kafka/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/haraka/haraka-plugin-haraka-plugin-queue-kafka/actions/workflows/ci.yml
-[clim-img]: https://codeclimate.com/github/haraka/haraka-plugin-haraka-plugin-queue-kafka/badges/gpa.svg
-[clim-url]: https://codeclimate.com/github/haraka/haraka-plugin-haraka-plugin-queue-kafka
-[npm-img]: https://nodei.co/npm/haraka-plugin-haraka-plugin-queue-kafka.png
-[npm-url]: https://www.npmjs.com/package/haraka-plugin-haraka-plugin-queue-kafka
+[ci-img]: https://github.com/benjamonnguyenp-]0/haraka-plugin-queue-kafka/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/benjamonnguyen/haraka-plugin-queue-kafka/actions/workflows/ci.yml
+[clim-img]: https://codeclimate.com/github/benjamonnguyen/haraka-plugin-queue-kafka/badges/gpa.svg
+[clim-url]: https://codeclimate.com/github/benjamonnguyen/haraka-plugin-queue-kafka
+[npm-img]: https://nodei.co/npm/haraka-plugin-queue-kafka.png
+[npm-url]: https://www.npmjs.com/package/haraka-plugin-queue-kafka

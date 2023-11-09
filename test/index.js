@@ -32,7 +32,6 @@ describe('load_kafka_config', function () {
     assert.strictEqual(kCfg.connectionTimeout, 30000)
     assert.strictEqual(this.plugin.produceTimeout, 30000)
     assert.strictEqual(this.plugin.topic, '')
-    assert.strictEqual(kCfg.logLevel, 4)
     assert.ok(!kCfg.sasl)
     assert.ok(!kCfg.ssl)
     done()

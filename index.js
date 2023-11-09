@@ -1,6 +1,6 @@
 'use strict'
 
-const { Kafka, logLevel} = require('kafkajs');
+const { Kafka } = require('kafkajs');
 
 exports.register = function () {
   this.load_kafka_config();
@@ -49,13 +49,11 @@ exports.load_kafka_config = function () {
   this.topic = cfg.topic;
   this.produceTimeout = parseInt(cfg.timeout) || 30000;
   const connectionTimeout = parseInt(cfg.connectTimeout) || 30000;
-  const lvl = parseInt(cfg.logLevel) || logLevel.INFO;
 
   this.kCfg = {
     clientId,
     brokers,
     connectionTimeout,
-    logLevel: lvl,
   };
   if (cfg.mechanism) {
     this.kCfg.sasl = {
